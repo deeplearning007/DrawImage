@@ -18,6 +18,7 @@
 		0AADC1801D7DA903005F2925 /* OpenGLESDrawImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AADC17F1D7DA903005F2925 /* OpenGLESDrawImageView.m */; };
 		0AADC1881D7DBDD0005F2925 /* life_png.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AADC1871D7DBDD0005F2925 /* life_png.png */; };
 		0AADC18B1D7DCD92005F2925 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AADC18A1D7DCD92005F2925 /* GLKit.framework */; };
+		0ACD5E681D7EC1E5004094BE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACD5E671D7EC1E5004094BE /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		0AADC1841D7DB091005F2925 /* OpenGLESUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLESUtil.h; sourceTree = "<group>"; };
 		0AADC1871D7DBDD0005F2925 /* life_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = life_png.png; sourceTree = "<group>"; };
 		0AADC18A1D7DCD92005F2925 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		0ACD5E661D7EC1E5004094BE /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		0ACD5E671D7EC1E5004094BE /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				0AADC1651D7DA54C005F2925 /* AppDelegate.m */,
 				0AADC1671D7DA54C005F2925 /* ViewController.h */,
 				0AADC1681D7DA54C005F2925 /* ViewController.m */,
+				0ACD5E661D7EC1E5004094BE /* FirstViewController.h */,
+				0ACD5E671D7EC1E5004094BE /* FirstViewController.m */,
 				0AADC17E1D7DA903005F2925 /* OpenGLESDrawImageView.h */,
 				0AADC17F1D7DA903005F2925 /* OpenGLESDrawImageView.m */,
 				0AADC1841D7DB091005F2925 /* OpenGLESUtil.h */,
@@ -174,6 +179,7 @@
 			files = (
 				0AADC1801D7DA903005F2925 /* OpenGLESDrawImageView.m in Sources */,
 				0AADC1691D7DA54C005F2925 /* ViewController.m in Sources */,
+				0ACD5E681D7EC1E5004094BE /* FirstViewController.m in Sources */,
 				0AADC1661D7DA54C005F2925 /* AppDelegate.m in Sources */,
 				0AADC1631D7DA54C005F2925 /* main.m in Sources */,
 			);

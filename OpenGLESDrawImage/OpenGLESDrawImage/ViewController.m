@@ -7,30 +7,37 @@
 //
 
 #import "ViewController.h"
-#import "OpenGLESDrawImageView.h"
+#import "FirstViewController.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) UIButton *joinButton;
 
 @end
 
 @implementation ViewController
-{
-    OpenGLESDrawImageView *drawImageView;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    drawImageView = [[OpenGLESDrawImageView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:drawImageView];
     
-    UIImage *image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"life_png" ofType:@"png"]];
-    [drawImageView drawImage:image];
+    self.joinButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.joinButton.frame = CGRectMake(60, 100, 100, 60);
+    [self.joinButton setTitle:@"join" forState:UIControlStateNormal];
+    [self.joinButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.joinButton setBackgroundColor:[UIColor greenColor]];
+    [self.view addSubview:self.joinButton];
+    [self.joinButton addTarget:self action:@selector(joinButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)joinButtonEvent:(UIButton *)button {
+    FirstViewController *firstVC = [[FirstViewController alloc] init];
+    [self presentViewController:firstVC animated:YES completion:nil];
 }
 
 @end
